@@ -1,5 +1,11 @@
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(img/background.png);
+  font-family: Montserrat, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color:#515076;
@@ -11,24 +17,33 @@ body {
   line-height: 78px;
   margin: 0px;
   padding: 0px;
+  margin-top: 220px;
+  margin-bottom: 110px;
   text-align: center;
   color:#515076
 }
 
-.products-list{
-  list-style: 0;
+.products-list {
+  list-style: none;
   padding: 0;
-  margin:0;
-  background-color: #F7F7FA;
-  width: 340px;
+  margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 45px;
+  column-gap: 45px;
+  justify-content: center;
+  margin-bottom: 116px;
 }
 
 .list {
-  padding-bottom: 25px;
+  padding: 25px;
+  border: 1px solid #f3f3f6;
+  background-color: #F7F7FA;
 }
 
 .images {
-  padding: 25px;
+  margin-bottom: 30px;
 }
 
 .skin-type {
@@ -44,7 +59,6 @@ body {
   line-height: 27px;
   font-weight: 700;
   font-size: 20px;
-  margin: 0px;
   padding: 25px;
 }
 
@@ -53,9 +67,10 @@ body {
   font-size: 13px;
   line-height: 18px;
   padding: 25px;
+  margin-bottom: 10px;
 }
 
-.compound{
+.compound {
   margin:0;
   padding: 25px;
   padding-bottom: 10px;
@@ -63,6 +78,9 @@ body {
 
 .compound-list {
   padding-bottom: 25px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  line-height: 22px;
 }
 
 .price {
@@ -78,4 +96,5 @@ body {
   font-weight: 400;
   line-height: 24px;
   padding: 25px;
+  margin-left: 160px;
 }
