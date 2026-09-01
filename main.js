@@ -66,3 +66,32 @@ changeColorButton.addEventListener ('click', () => {changeColorButton.classList.
   changeColorButton.style.backgroundColor = greenColorHash;
 }
 })
+
+
+// дз 7 
+
+function text() {
+  if (10 > 2) {
+    let x = 50;
+    console.log(x)
+  }
+}
+
+
+const test = "test"
+
+function testFunc() {
+  const test = "test2"
+  console.log('1', test)
+  
+  if (true) {
+  const test = 'test3'
+  }
+  
+  console.log('2', test)
+}
+
+
+testFunc()
+
+console.log('3', test)
