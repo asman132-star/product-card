@@ -27,7 +27,7 @@ console.log(car)
 // Задание №5
 
 function getMaxSpeed(car) {
-  if ("maxSpeed" in {car}) {
+  if ("maxSpeed" in car) {
     return;
 }
 
