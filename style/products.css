@@ -16,3 +16,16 @@
   border: 1px solid #f3f3f6;
   background-color: #F7F7FA;
 }
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 45px;
+  column-gap: 45px;
+  justify-content: center;
+  margin-bottom: 116px;
+}

@@ -15,7 +15,7 @@
     <main class="catalog">
       <div class="container catalog__container">
         <h1 class="title catalog__title">Выбери свой продукт</h1>
-        <button id="change-color-all-card">Сменить цвет всех карточек</button>
+        <!--<button id="change-color-all-card">Сменить цвет всех карточек</button>
         <button id="change-color-first-card">Сменить цвет всех карточек</button>
         <button id="open-google">Открыть страницу google.com</button>
         <button id="output-console-log">Вывести сообщение в консоль лог</button>
@@ -125,8 +125,31 @@
               <span>7 520 &#8381;</span>
             </div>
           </li>
-        </ul>
+        </ul> -->
+        
+        <ul class="product-list"></ul>
+        <template class="product-card-template">
+        <li class="product-list__item card">
+          <img class="card__image" width="290" height="245"/>
+          <span class="card__category"></span>
+          <h2 class="card__name"></h2>
+          <p class="card__description">.</p>
+          <div class="card__compound-list compound">
+            <span class="compound__title">Состав:</span>
+            <ul class="compound__list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card__price">
+            <b>Цена</b>
+            <span class="card__price"></span>
+          </div>
+        </li>
+        </template>
       </div>
-      <script type="module" src="homework-9.js"></script>
+      <script type="module" src="homework-10.js"></script>
+      <script type="module" src="product-cards.js"></script>
   </body>
 </html>
