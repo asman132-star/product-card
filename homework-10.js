@@ -40,4 +40,4 @@ if (cardsCount > 0) {
 
 const accArrayProducts = productCards.reduce((acc, products) => {
   return [...acc, { [products.name]: products.description}]
-}, []);
+}, [])
