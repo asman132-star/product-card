@@ -14,6 +14,11 @@ const productList = document.querySelector('.product-list');
 
 function renderProducts(productCards) {
   productCards.forEach(products => {
+const productCardsTemplate = document.querySelector('.product-card-template');
+const productList = document.querySelector('.product-list');
+
+function getDisplayCards(productCards) {
+  pro.forEach(products => {
   const productCopy = productCardsTemplate.content.cloneNode(true);
     productCopy.querySelector('.card__image').src = products.image;
     productCopy.querySelector('.card__image').alt = products.name;
@@ -30,6 +35,22 @@ const cardsCount = getNumberCards();
 const selectedProducts = productCards.slice(0, cardsCount);
 
 renderProducts(selectedProducts);
+function getNumberCards() {
+  const howManyCards = prompt('Сколько карточек вы хотите отобразить?');
+  const count = Number(howManyCards);
+  if (isNaN(count) || count < 1 || count > 5) {
+  if (isNaN(count) || !Number.isInteger(count) || count < 1 || count > 5) {
+    alert('Пожалуйста, введите корректное число от 1 до 5!');
+    return 0;
+  }
+  return count;
+}};
+
+const cardsCount = getNumberCards();
+if (cardsCount > 0) {
+  const slicedCards = productCards.slice(0, cardsCount);
+  getDisplayCards(slicedCards);
+};
 
 
 // Задание №4
