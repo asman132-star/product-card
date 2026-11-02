@@ -1,6 +1,19 @@
 // Задание №3,5
 const { productCards } = await import ('./product-cards.js');
 
+function getNumberCards() {
+      const numberOfCards = prompt("Сколько карточек отобразить?")
+      if (numberOfCards >= 1 && numberOfCards <= 5) {
+        return Number(numberOfCards);
+      }
+      return 0;
+    }
+
+const productCardsTemplate = document.querySelector('.product-card-template');
+const productList = document.querySelector('.product-list');
+
+function renderProducts(productCards) {
+  productCards.forEach(products => {
 const productCardsTemplate = document.querySelector('.product-card-template');
 const productList = document.querySelector('.product-list');
 
@@ -18,6 +31,10 @@ function getDisplayCards(productCards) {
   });
 };
 
+const cardsCount = getNumberCards();
+const selectedProducts = productCards.slice(0, cardsCount);
+
+renderProducts(selectedProducts);
 function getNumberCards() {
   const howManyCards = prompt('Сколько карточек вы хотите отобразить?');
   const count = Number(howManyCards);
